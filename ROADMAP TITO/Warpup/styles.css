@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: wheat;
+    width: 100%;
+    height: 150vh;
+}
+.navbar {
+    background-color: #60D394;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    
+}
+.logo {
+    margin-left: 20px;
+}
+.logo img {
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    transition: color 0.9s, background-color 0.9s;
+}
+.nav-links li a:hover {
+    color: black;
+    background-color: white;
+}
+.welcome-section {
+    padding: 300px 0 300px 0;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.welcome-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.welcome-section p {
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+.btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 50px 20px 50px;
+    background-color: #EE6055;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #FFD97D;
+    font-weight: 1000;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    color: black;
+    background-color: gray;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.subcontainer {
+    display: block;
+    padding: 50px 100px 50px 100px;
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    transition: background-color 0.9s, color 0.9s;
+}
+.subcontainer:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .subcontainer {
+        margin: 0 20px 30px 20px;
+    }
+}
+
+

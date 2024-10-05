@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Verdana';
+    color: #1E2145;
+    background: linear-gradient(135deg, #FF7E67, #FFE569, #6BD5E1);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Verdana', sans-serif;
+    color: #1E2145;
+    background: linear-gradient(135deg, #FF7E67, #FFE569, #6BD5E1); /* Example colors from buttons */
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    border: 10px solid whitesmoke;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;  /* Full width by default */
+    max-width: 1200px; /* Optional: Limit the container width */
+}
+
+.subcontainer {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.title {
+    margin-bottom: 1.5rem;
+}
+.pricing {
+    font-size: 2rem;
+}
+span {
+    font-size: 3.5rem;
+}
+.subtitle {
+    font-size: 12px;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.content {
+    font-weight: bold;
+}
+
+button {
+    padding: 1rem 2rem;
+    color: black;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.10rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pink {
+    background-color:#EDBBFE ;
+}
+
+.bluesea {
+    background-color: #ADF1F5;
+}
+.yellow{
+    background-color: #FFDDB7;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between; /* Distribute space evenly between subcontainers */
+        padding: 4rem;
+    }
+
+    .subcontainer {
+        width: calc(33.33% - 1rem); /* Adjust width to fit three in a row */
+        margin: 0.5rem;
+        text-align: left;
+    }
+}

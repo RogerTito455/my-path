@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 1.5rem;
+    line-height: 1,2;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.logo {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: yellowgreen;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.welcome-section {
+    background: #f4f4f4;
+}
+
+/* Estilo específico para la sección de bienvenida */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 48%;
+}
+
+/* Estilos de otras secciones */
+.services-section {
+    background: #e2e2e2;
+}
+
+.contact-section {
+    background: #ccc;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}

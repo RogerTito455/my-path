@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --green-color: #BFDB61;
+    --white-color: #fff;
+    --grey-color: #1F1F1F;
+    --greyish-color: #333333;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141414;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Consider base font size */
+    width: 100%;
+    margin: 0 auto;
+
+}
+h2 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1rem;
+}
+img {
+    object-fit: contain;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    background-color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    width: 23rem;
+    border-radius: 1rem;
+}
+.container .profile h2{
+    color: var(--white-color);
+    margin-top: 1rem;
+}
+.container .profile .location {
+    color: var(--green-color);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.container .profile p {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+.container .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.container button {
+    background-color: var(--greyish-color);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #464242;
+}
+
+@media (max-width: 726px) {
+    .container {
+        width: 80%;  /* Increase width on smaller screens */
+        padding: 1.5rem; /* Adjust padding for better spacing */
+    }
+}

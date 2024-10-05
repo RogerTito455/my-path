@@ -1,0 +1,50 @@
+:root {
+    --main-text-color: rgb(242, 215, 215);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('/src/pink1.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Verdana', sans-serif;
+    max-width: 100%;
+    opacity: 100px;
+}
+h3, h1, .content, p, a {
+    color: var(--main-text-color);
+}
+.main-container {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+
+}
+
+
+h3 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 0.85rem;
+}
+h1 {
+    font-size: 15rem;
+}
+.content {
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+
+a {
+    font-weight: bold;
+}

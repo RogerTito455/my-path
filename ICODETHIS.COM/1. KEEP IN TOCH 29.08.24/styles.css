@@ -1,0 +1,97 @@
+:root {
+  --main-bg-color: #f1f5f9;
+  --main-font-color: #3b9cfd;
+  --container-bg-color: white;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-bg-color: #3b9cfd;
+  --button-shadow-color: rgba(0, 0, 0, 0.2);
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: var(--font-family);
+}
+.main-container {
+  padding: 7rem 5rem;
+  border-radius: 1rem;
+  background-color: var(--container-bg-color);
+  box-shadow: 0px 1px 10px var(--shadow-color);
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.subcontainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.subcontainer button {
+  width: 300px; /* Mismo ancho para ambos */
+  height: 80px; /* Mismo alto para ambos */
+  padding: 0 1rem; /* Espaciado interno */
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.subcontainer input {
+  margin-right: 2rem;
+  text-align: left; /* Centrar texto dentro del input */
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  width: 600px; /* Mismo ancho para ambos */
+  height: 80px; /* Mismo alto para ambos */
+}
+
+.subcontainer button {
+  color: white;
+  background-color: #3b9cfd;
+  box-shadow: 0px 5px 20px rgba(59, 156, 253, 0.5); /* Sombra azul */
+  border: none; /* Quitar borde predeterminado */
+  cursor: pointer;
+}
+.sub1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+}
+.sub1 input[type="checkbox"] {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    transform: scale(2); /* Ajusta el tamaño aquí */
+    -webkit-transform: scale(2); /* Para compatibilidad con navegadores basados en WebKit */
+  }
+.sub1 p {
+  font-size: 1.25rem;
+  text-align: left;
+}

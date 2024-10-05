@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-bar {
+    padding: 30px 50px;
+    background-color: #14161A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+.nav-links li {
+    padding: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+}
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 200px ;
+    background-color: grey;
+}
+
+.bienvenida h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700
+}
+.bienvenida p {
+    color: yellow;
+    margin-bottom: 50px;
+    font-weight: 500
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-around ;
+    padding: 100px;
+}
+.container {
+    background-color: grey;
+    text-align: center;
+    width: 200px;
+    padding: 20px
+}
+.container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+.container p {
+    color: red;
+    margin-bottom: 20px;
+}
+
